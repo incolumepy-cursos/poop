@@ -1,7 +1,7 @@
-from duck import DecoyDuck, MallardDuck, ModelDuck, RubberDuck
-from fly_behavior import FlyRocketPowered
+from .duck import DecoyDuck, MallardDuck, ModelDuck, RubberDuck
+from .fly_behavior import FlyRocketPowered
 
-if __name__ == "__main__":
+def run():
     # Instatiate ducks
     print("Mallard duck")
     mallard = MallardDuck()
@@ -32,3 +32,7 @@ if __name__ == "__main__":
     for duck in (mallard, rubber, decoy, model):
         duck.display()
         duck.swin()
+
+
+if __name__ == "__main__":
+    run()
