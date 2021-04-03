@@ -13,7 +13,6 @@ class Duck(ABC):
     The usage of ABC and abstractmethod is to force that
     all ducks should have a display method with your own implementation.
     """
-
     def __init__(self, fly_behavior, quack_behavior):
         self.fly_behavior = fly_behavior
         self.quack_behavior = quack_behavior
@@ -48,7 +47,6 @@ class MallardDuck(Duck):
     Specializes the method display with your own implementation.
     As a Duck, MallardDucks also can swin.
     """
-
     def __init__(self):
         # override the method with pre defined values
         self.fly_behavior = FlyWithWings()
@@ -67,7 +65,6 @@ class RubberDuck(Duck):
     Specializes the method display with your own implementation.
     As a Duck, RubberDucks also can swin.
     """
-
     def __init__(self):
         # override the method with pre defined values
         self.fly_behavior = FlyNoWay()
@@ -86,7 +83,6 @@ class DecoyDuck(Duck):
     Specializes the method display with your own implementation.
     As a Duck, DecoyDucks also can swin (?!).
     """
-
     def __init__(self):
         # override the method with pre defined values
         self.fly_behavior = FlyNoWay()
@@ -104,7 +100,6 @@ class ModelDuck(Duck):
     Specializes the method display with your own implementation.
     As a Duck, ModelDucks also can swin.
     """
-
     def __init__(self):
         # override the method with pre defined values
         self.fly_behavior = FlyNoWay()
